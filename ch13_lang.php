@@ -1,3 +1,3 @@
 <?php
-    shell_exec('ls');
+    echo shell_exec('ls');
 ?>
