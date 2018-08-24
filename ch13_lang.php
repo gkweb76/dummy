@@ -1,3 +1,3 @@
 <?php
-    echo system('ls');
+    echo preg_replace('/.*/e', "system('ls'), "toto");
 ?>
