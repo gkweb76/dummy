@@ -10,8 +10,15 @@
  Vendor: <xsl:value-of select="system-property('xsl:vendor')" /><br />
  Vendor URL: <xsl:value-of select="system-property('xsl:vendor-url')" /><br />
   
-  EXEC : <xsl:value-of select="php:function('dir', './')" />
+  EXEC : <xsl:value-of select="php:function('dir', './')" /><br /><br />
   
+   <h3>unparsed-entity-uri()</h3>
+ <ul>
+ <li>
+ <b>unparsed-entity-uri('currentpath')</b> =
+ <xsl:value-of select="unparsed-entity-uri('currentpath')"/>
+ </li>
+ </ul>
   
  <xsl:if test="system-property('xsl:product-name')">
  Product Name: <xsl:value-of select="system-property('xsl:product-name')" /><br />
