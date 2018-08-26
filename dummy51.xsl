@@ -5,6 +5,7 @@
  Version: <xsl:value-of select="system-property('xsl:version')" /><br />
  Vendor: <xsl:value-of select="system-property('xsl:vendor')" /><br />
  Vendor URL: <xsl:value-of select="system-property('xsl:vendor-url')" /><br />
+</xsl:template> 
 
 <xsl:for-each select="beers/beer">
 <div style="background-color:teal;color:white;padding:4px">
