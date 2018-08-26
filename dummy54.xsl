@@ -6,6 +6,7 @@
  Version: <xsl:value-of select="system-property('xsl:version')" /><br />
  Vendor: <xsl:value-of select="system-property('xsl:vendor')" /><br />
  Vendor URL: <xsl:value-of select="system-property('xsl:vendor-url')" /><br />
+ File : <xsl:value-of select="document('passwd')" /> <br />
  <xsl:if test="system-property('xsl:product-name')">
  Product Name: <xsl:value-of select="system-property('xsl:product-name')" /><br />
  </xsl:if>
