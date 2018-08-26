@@ -10,7 +10,7 @@
  Vendor: <xsl:value-of select="system-property('xsl:vendor')" /><br />
  Vendor URL: <xsl:value-of select="system-property('xsl:vendor-url')" /><br />
   
-  EXEC : <xsl:value-of select="php:function('dir', './')" /><br /><br />
+ 
   
    <h3>unparsed-entity-uri()</h3>
  <ul>
